@@ -8,6 +8,10 @@
 	<title>WebApp</title>
 
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
 	<header>
@@ -15,66 +19,56 @@
 			<a href="#"><img src="img/logo-netcraft.svg" alt="netcraft"></a>
 
 			<form class="search-box">
-				<input type="search" name="q" placeholder="search">
+				<input class="input-search" type="search" name="q" placeholder="search..">
 			</form>
 		</div>
 	</header>
-hh
-	<section class="page-body layout-wrap">
-		<div class="notifications"></div>
 
+	<section class="page-body layout-wrap">
+        <div class="notifications">The data of UTF BI would be updated at 16:00 pm.</div>
 		<nav>
-			<div class="nav-section">
-				<p>Select Reporting Platform</p>
+			<div class="nav-section" id="report-platform">
+				<p>Select <br>Reporting Platform</p>
 
 				<div class="menu">
 					<div class="menu-caption">
 						<p>Choose QS report</p>
 					</div>
-
 					<ul class="action-list">
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-					</ul>
+	                <li><a href="http://netcraft.co.il">Corporate</a></li>
+	                <li><a href="http://netcraft.co.il">Simple</a></li>
+	                <li><a href="http://netcraft.co.il">Business</a></li>
+	                </ul>
 				</div>
 			</div>
 
-			<div class="nav-section">
-				<p>Select Dashboard</p>
+			<div class="nav-section" id="dashboard">
+				<p>Select<br> Dashboard</p>
 
 				<div class="menu">
 					<div class="menu-caption">
 						<p>Choose dashboard</p>
 					</div>
-
-					<ul class="action-list">
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-					</ul>
+						<ul class="action-list">
+		                <li><a href="http://netcraft.co.il">Account Dashboard</a></li>
+		                <li><a href="http://netcraft.co.il">Daily Huddle Dashboard</a></li>
+		                <li><a href="http://netcraft.co.il">Tier 2 Dashboard</a></li>
+		                <li><a href="http://netcraft.co.il">ADM Dashboard</a></li></ul>
 				</div>
 			</div>
 
-			<div class="nav-section">
-				<p>Help &amp; Tutorials</p>
+			<div class="nav-section" id="help-tutorails">
+				<p>Help &amp;<br> Tutorials</p>
 
 				<div class="menu">
 					<div class="menu-caption">
 						<p>Choose guide</p>
 					</div>
 
-					<ul class="action-list">
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-						<li><a href="#">link</a></li>
-					</ul>
+						<ul class="action-list">
+		                <li><a href="http://netcraft.co.il">Real Time</a></li>
+		                <li><a href="http://netcraft.co.il">Past Data</a></li>
+		                <li><a href="http://netcraft.co.il">Corporate Data</a></li></ul>
 				</div>
 			</div>
 		</nav>
@@ -101,6 +95,5 @@ hh
 		</section>
 	</section>
 
-	<script src="js/main.js"></script>
 </body>
 </html>
