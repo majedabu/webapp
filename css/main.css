@@ -75,9 +75,9 @@ nav{display: block;height: 200px;}
 
 #quickReports, #my-folders, #myTeamFolders, #public-folders{width: 100%;background: #E5E5E5;position: relative;}
 
-#quickReports,#myTeamFolders { height: 500px;}
+#quickReports,#myTeamFolders { height:353px;}
 
-#my-folders, #public-folders {height: 700px;}
+#my-folders, #public-folders {height: 750px;}
 .active{background-color: #E5E5E5 !important;color: black !important;}
 
 .hidden{ display: none !important;}
@@ -95,26 +95,26 @@ nav{display: block;height: 200px;}
 .quick-reports-buttons > .expand{right: 60px;}
 
 .quick-reports-form, .form-my-team-form{background: white none repeat scroll 0 0;box-shadow: 0 2px 6px 2px rgba(50, 50, 50, 0.3);height: 260px;
-left: 0;margin: 0 0 0 16px;overflow: hidden;padding: 16px;position: absolute;right: 16px;top: 63px;}
+left: 0;margin: 0 0 0 16px;overflow: hidden;padding: 15px 15px 0px 15px;position: absolute;right: 16px;top: 63px;}
 
 
-.report-row{background-color: #dcdada;font-size: 1.1rem;height: 35px;padding: 7px 1.51515%;position: relative;margin-bottom: 16px;border: 0 none;}
+.report-row{background-color: #dcdada;font-weight: 100%;height: 35px;padding: 7px 1.51515%;position: relative;margin-bottom: 16px;border-color: #F3F3F3; border-radius: 9px;}
 
 .report-number{position: absolute;top: 15px;}
 
 .input-feild {height: 36px;position: absolute;}
 
-.report-name {left: 16%;width: 37%;}
+.report-name {left: 19%;width: 35%;}
 
 .report-url {left: 59.5%;width: 40%;}
 
-.report-input {border: medium none;direction: ltr;font-size: 0.8rem;height: 32px;padding: 0 4%;position: inherit;left: 15%;width: 70%;}
+.report-input {border: medium none;direction: ltr;font-size: 0.8rem;height: 30px;padding-left:10px;margin-left:40px;width: 70%;}
 
 .report-label{position: absolute;top: 21%;}
 
-.f-footer {float: right;font-size: 0.9rem;}
+.f-footer {float: right;padding-top: 6px;}
 
-.cancel{color: black;width: 45px;border: none;text-decoration: underline;cursor: pointer;background-color: transparent;}
+.cancel{padding-right: 6px;margin-top:5px;color: black;width: 44px;border: none;text-decoration: underline;cursor: pointer;background-color: transparent;}
 
 .save {background-color: black;border: 0 none;color: white;height: 30px;width: 100px;}
 
