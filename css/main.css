@@ -46,7 +46,7 @@ nav{display: block;height: 200px;}
 
 .action-list > li > a{ text-decoration: none;color: black;}
 
-.menu-hint{ background: #E5E5E5; padding: 1px;height: 38px;}
+.menu-hint{ width:100% ;position:absolute; background: #E5E5E5; padding: 1px;height: 38px;}
 
 .menu-hint > p{float: left;margin: 10px 10px;}
 
