@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta charset="UTF-8">
 	<title>WebApp</title>
-
 	<link rel="stylesheet" href="css/main.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="fonts/style.css">
 </head>
 <body>
-	<header>
+<header>
 		<div class="layout-wrap">
 			<a href="#"><img src="img/logo-netcraft.svg" alt="netcraft"></a>
 
@@ -24,76 +17,199 @@
 		</div>
 	</header>
 
-	<section class="page-body layout-wrap">
-        <div class="notifications">The data of UTF BI would be updated at 16:00 pm.</div>
-		<nav>
-			<div class="nav-section" id="report-platform">
-				<p>Select <br>Reporting Platform</p>
 
+	<div class="page-body layout-wrap">
+	    <div class="notifications">
+	    </div>
+	    <nav>
+	   		 <div class="nav-section" id="report-platform">
 				<div class="menu">
 					<div class="menu-caption">
-						<p>Choose QS report</p>
 					</div>
-					<ul class="action-list">
-	                <li><a href="http://netcraft.co.il">Corporate</a></li>
-	                <li><a href="http://netcraft.co.il">Simple</a></li>
-	                <li><a href="http://netcraft.co.il">Business</a></li>
-	                </ul>
+					<ul class="action-list"></ul>
 				</div>
 			</div>
 
 			<div class="nav-section" id="dashboard">
-				<p>Select<br> Dashboard</p>
-
 				<div class="menu">
 					<div class="menu-caption">
-						<p>Choose dashboard</p>
 					</div>
-						<ul class="action-list">
-		                <li><a href="http://netcraft.co.il">Account Dashboard</a></li>
-		                <li><a href="http://netcraft.co.il">Daily Huddle Dashboard</a></li>
-		                <li><a href="http://netcraft.co.il">Tier 2 Dashboard</a></li>
-		                <li><a href="http://netcraft.co.il">ADM Dashboard</a></li></ul>
+					<ul class="action-list"></ul>
 				</div>
 			</div>
 
 			<div class="nav-section" id="help-tutorails">
-				<p>Help &amp;<br> Tutorials</p>
-
 				<div class="menu">
 					<div class="menu-caption">
-						<p>Choose guide</p>
 					</div>
-
-						<ul class="action-list">
-		                <li><a href="http://netcraft.co.il">Real Time</a></li>
-		                <li><a href="http://netcraft.co.il">Past Data</a></li>
-		                <li><a href="http://netcraft.co.il">Corporate Data</a></li></ul>
+					<ul class="action-list"></ul>
 				</div>
 			</div>
 		</nav>
 
-		<section class="tabs">
-			<ul>
-				<li><a href="#quick-reports">Quick Reports</a></li>
-				<li><a href="#my-folders">My Folders</a></li>
-				<li><a href="#my-team-folders">My Team Folders</a></li>
-				<li><a href="#public-folders">Public Folders</a></li>
-			</ul>
 
-			<div id="quick-reports">
-			</div>
+	    <div class="tabs">
+	        <ul id="tabs-list">
+	            <li><a class="active" rel="quickReports">
+	            <i class="icon-external-link"></i>
+	            Quick Reports</a>
+	            </li>
+	            <li><a class="" rel="my-folders">
+	           	<i class="icon-star-o"></i>
+	            My Folders</a>
+	            </li>
+	            <li><a class="" rel="myTeamFolders">
+	            <i class="icon-folder-open-o"></i>
+	            My Team Folders</a>
+	            </li>
+	            <li><a class="" rel="public-folders">
+	            <i class="icon-copy"></i>
+	            Public Folders</a>
+	            </li>
+	        </ul>
+	        <div id="quickReports" class="tab-content">
+	        	<label class="hidden" for="report-names-quick-reports">select report name</label>
+		        <select class="report-names-ddl hidden" id="report-names-quick-reports"></select>
+		        <div class="quick-reports-buttons">
+		        	<a href="" target="_blank" class="expand q-r-btn hidden" id="expand-quick-reports">e</a>
+		        	<button class="settings q-r-btn" id="settingsBtn-quick-reports">s</button>
+		        </div>
+		        <div class="quick-reports-form" id="form-quick-reports">
+		        	<form class="SettingsForm" id="quick-reports" runat="server">
 
-			<div id="my-folders">
-			</div>
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 01</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport1">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport1" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport1">URL</label>
+                                <input class="report-input url-input" placeholder="Site Url" id="urlReport1" type="url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
 
-			<div id="my-team-folders">
-			</div>
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 02</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport2">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport2" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport2">URL</label>
+                                <input class="report-input url-input" placeholder="Site Url" id="urlReport2" type="url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
 
-			<div id="public-folders">
-			</div>
-		</section>
-	</section>
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 03</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport3">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport3" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport3">URL</label>
+                                <input type="url" class="report-input url-input" id="urlReport3" placeholder="Site Url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
 
+                        <div class="f-footer">
+                        	<label class="hidden" for="quick-reports-cancel">cancel</label>
+                            <input id="quick-reports-cancel" class="cancel" value="Cancel" type="">
+                            <label class="hidden" for="quick-reports-save">save</label>
+                            <input id="quick-reports-save" class="save" value="Save" type="submit">
+                        </div>
+                    </form>
+		        </div>
+		        <div class="content-quickreports folder-content hidden" id="iframe-quick-reports">
+                    <iframe class="iframe iframe-quick-reports" src="" frameborder="0"></iframe>
+                </div>
+	        </div>
+
+	        <div id="my-folders" class="tab-content hidden">
+	        	<div class="my-folders-buttons">
+		        	<a href="http://edition.cnn.com/" target="_blank" class="expand q-r-btn">e</a>
+		        </div>
+		        <div class="my-folders-content">
+		        	<iframe class="iframe" src="http://edition.cnn.com/"></iframe>
+		        </div>
+	        </div>
+
+	        <div id="myTeamFolders" class="tab-content hidden">
+	        	<label class="hidden" for="report-names-my-team-folders">select report name</label>
+	        	<select class="report-names-ddl hidden" id="report-names-my-team-folders"></select>
+		        <div class="quick-reports-buttons">
+		        	<a href="" target="_blank" class="expand q-r-btn hidden" id="expand-my-team-folders">e</a>
+		        	<button class="settings q-r-btn" id="settingsBtn-my-team-folders">s</button>
+		        </div>	
+		        <div class="form-my-team-form" id="form-my-team-folders">
+		        	<form class="SettingsForm" id="my-team-folders" runat="server">
+
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 01</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport4">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport4" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport4">URL</label>
+                                <input class="report-input url-input" placeholder="Site Url" id="urlReport4" type="url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 02</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport5">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport5" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport5">URL</label>
+                                <input class="report-input url-input" placeholder="Site Url" id="urlReport5" type="url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 03</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport6">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport6" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport6">URL</label>
+                                <input type="url" class="report-input url-input" id="urlReport6" placeholder="Site Url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
+
+                        <div class="f-footer">
+                        	<label class="hidden" for="my-team-folders-cancel">cancel</label>
+                            <input id="my-team-folders-cancel" class="cancel" value="Cancel" type="">
+                            <label class="hidden" for="my-team-folders-save">save</label>
+                            <input id="my-team-folders-save" class="save" value="Save" type="submit">
+                        </div>
+                        
+                    </form>
+		        </div>
+		         <div class="content-myteamfolders folder-content hidden" id="iframe-my-team-folders">
+                    <iframe class="iframe iframe-my-team-folders" src="" frameborder="0"></iframe>
+                </div>
+	        </div>
+
+	        <div id="public-folders" class="tab-content hidden">
+		        <div class="my-folders-buttons">
+			        	<a href="http://edition.cnn.com/" target="_blank" class="expand q-r-btn">e</a>
+		        </div>
+		        <div class="my-folders-content">
+		        	<iframe class="iframe" src="http://edition.cnn.com/"></iframe>
+		        </div>
+	        </div>
+	    </div>
+	</div>
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
