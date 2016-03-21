@@ -46,7 +46,7 @@ nav{display: block;height: 200px;}
 
 .action-list > li > a{ text-decoration: none;color: black;}
 
-.menu-hint{ width:100% ;position:absolute; background: #E5E5E5; padding: 1px;height: 38px;}
+.menu-hint{background: #E5E5E5; padding: 1px;height: 38px;}
 
 .menu-hint > p{float: left;margin: 10px 10px;}
 
@@ -56,8 +56,8 @@ nav{display: block;height: 200px;}
  }
 @media (max-width: 850px){
 .menu-hint:after{
-    border: 7px solid transparent!important;
-    border-top: 7px solid black!important;
+    border: 8px solid transparent;
+    border-top: 7px solid black;
 }}
 .nav-section:hover { background-color: #333333 !important; cursor: pointer;}
 .nav-section:hover > .menu >.action-list{display: block;position: absolute;width: 100%;z-index: 1;
