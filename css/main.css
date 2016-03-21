@@ -38,11 +38,11 @@ border-right: 10px solid transparent; border-top: 10px solid black; float: right
 .action-list > li {padding: 10px;border-bottom: 1px solid #e6e6e6;}
 .action-list > li :hover {	background:  #E5E5E5;}
 
-#report-platform{ background: url("../img/icons/action-report-new.png") left 50% top 75px no-repeat black; background-size: 40%; }
+#report-platform{ background: url("../img/action-report-new.png") left 50% top 75px no-repeat black; background-size: 40%; }
 
-#dashboard{ background: url("../img/icons/action-report-top.png") left 50% top 75px no-repeat black;  background-size: 40%; }
+#dashboard{ background: url("../img/action-report-top.png") left 50% top 75px no-repeat black;  background-size: 40%; }
 
-#help-tutorails{ background: url("../img/icons/actions-help.png") left 50% top 75px no-repeat black; background-size: 40%;}
+#help-tutorails{ background: url("../img/actions-help.png") left 50% top 75px no-repeat black; background-size: 40%;}
 
 .nav-section:last-child { margin-right: 0;}
 
@@ -80,9 +80,9 @@ border-right: 10px solid transparent; border-top: 10px solid black; float: right
 
 .q-r-btn{width: 45px;height: 45px;position: absolute;background-repeat: no-repeat;background-position: center;color: transparent;}
 
-.settings{background-image: url("../img/icons/settings.png");border: none;margin-top: 18px;right: 16px;background-color: white;padding: 10px;cursor: pointer;}
+.settings{background-image: url("../img/settings.png");border: none;margin-top: 18px;right: 16px;background-color: white;padding: 10px;cursor: pointer;}
 
-.expand{background-image: url("../img/icons/expand.png");margin-top: 20px;}
+.expand{background-image: url("../img/expand.png");margin-top: 20px;}
 
 .quick-reports-buttons > .expand{right: 60px;}
 
