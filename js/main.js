@@ -13,7 +13,7 @@ function initPage(){
 }
 
 window.onLoad = initPage();
-function updateNoti(notification){
+function updateNote(notification){
 	var notificationsDiv = document.getElementById('notifications');
 	if (!notification) {
 		notificationsDiv.textContent = '';
