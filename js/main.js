@@ -13,9 +13,16 @@ function initPage(){
 }
 
 window.onLoad = initPage();
-
-function updateNote(notification){
-	if(notification !== undefined){$('.notifications').html(notification);}
+function updateNoti(notification){
+	var notificationsDiv = document.getElementById('notifications');
+	if (!notification) {
+		notificationsDiv.textContent = '';
+		notificationsDiv.classList.add('hidden');
+	}
+	else {
+		notificationsDiv.textContent = notification;
+		notificationsDiv.classList.remove('hidden');
+	}
 }
 function updateQuickAction(quickActions){
 	if(quickActions !== undefined){
