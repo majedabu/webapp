@@ -14,7 +14,7 @@ function initPage(){
 
 window.onLoad = initPage();
 function updateNote(notification){
-	var notificationsDiv = document.getElementById('notifications');
+	var notificationsDiv = document.querySelector('.notifications');
 	if (!notification) {
 		notificationsDiv.textContent = '';
 		notificationsDiv.classList.add('hidden');
