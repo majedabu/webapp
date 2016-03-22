@@ -2,6 +2,18 @@ function qs(selector) { return document.querySelector(selector);}
 
 function qsa(selector) {return document.querySelectorAll(selector);}
 
+function initPage(){
+	UTILS.ajax("data/config.json", {done: updatePageData});
+	formRequiredInputs('.SettingsForm');
+    $('.SettingsForm').submit(saveForm);
+    for(var i = 0; i < 2; i++){
+        $('.report-names-ddl').eq(i).change(selectOptionChange);
+    }
+    localStorageForPageRefresh();
+}
+
+window.onLoad = initPage();
+
 function updateNote(notification){
 	if(notification !== undefined){$('.notifications').html(notification);}
 }
